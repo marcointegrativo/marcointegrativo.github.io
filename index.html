@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Marco Integrativo.</title>
+    <!--AJ-->
+    <link rel="shortcut icon" href="img/MIlogo.png">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--Bootstrap 5.1.3-->
+    <link href="css/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--AOS Animate On Scroll Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Alertify-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <!--Fontawesome 6.0.0-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--Alertify-->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <!--AOS Animate On Scroll Library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Jquery-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg header-transparent" id="degradado">
+        <div class="block active" data-opc="1">
+            <a class="nav-link" id="cuadro">
+                <img src="img/MIlogo.png" id="img">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navToggler">
+            <ul class="navbar-nav ms-auto mt-2 mt-md-0">
+                <li class="block2" data-opc="2">
+                    <span class="nav-link sel header-transparent">PROP&Oacute;SITO</span>
+                </li>
+                <li class="block2" data-opc="3">
+                    <span class="nav-link sel header-transparent">ACTIVIDADES</span>
+                </li>
+                <li class="block2" data-opc="4">
+                    <span class="nav-link sel header-transparent">TESTIMONIOS</span>
+                </li>
+                <li class="block2" data-opc="5">
+                    <span class="nav-link sel header-transparent donar">AGENDAR</span>
+                </li>
+            </ul>
+        </div>
+        <!--HAMBURGUESA-->
+        <div class="navbar-toggler hamburger" data-toggle="collapse" data-target="#navToggler">
+            <div class="hamburger-inner"></div>
+        </div>
+    </nav>
+
+    <!--SELECCION HAMBURGUESA-->
+    <div id="navHambuerger">
+        <ul id="menu" class="navbar-nav">
+            <li class="nav-item block3" data-opc="2">
+                <span class="nav-link sel header-transparent">PROP&Oacute;SITO</span>
+            </li>
+            <li class="nav-item block3" data-opc="3">
+                <span class="nav-link sel header-transparent">ACTIVIDADES</span>
+            </li>
+            <li class="nav-item block3" data-opc="4">
+                <span class="nav-link sel header-transparent">TESTIMONIOS</span>
+            </li>
+            <li class="nav-item block3" data-opc="5">
+                <span class="nav-link sel header-transparent">AGENDAR</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Aquí se carga el contenido dinámicamente-->
+    <div class="container-fluid px-0 mx-0" id="main"></div>
+
+    <div id="cargar" align="center">
+        <br><br>
+        <br><br>
+        <img width="70" src="img/loading.gif" />
+        <p>
+            Cargando ...
+        </p>
+    </div>
+
+    <footer class="page-footer font-small special-color-dark pt-4 text-secondary marmol_cont">
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Redes:</h5>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item my-2 redes">
+                                    <a href="https://www.instagram.com/marcointegrativo/" class="contacto" target="_blank">
+                                        <i class="fa-brands fa-instagram mx-2"></i> Marco Integrativo
+                                    </a>
+                                    <br>
+                                    <a class="btn-floating btn-fb contacto" href="https://www.facebook.com/mandatosancestrales" target="_blank">
+                                        <i class="fa-brands fa-facebook-square text-primary mx-2"></i> Mandatos Ancestrales
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h5>Contacto:</h5>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item my-2 redes">
+                                    <span>
+                                        <i class="fa-brands fa-whatsapp text-success mx-2"></i> 999 215 7507
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-lg-6">
+                    <h5>Google Maps:</h5>
+                    <div class="row pt-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.927605025677!2d-99.1721798!3d19.415533699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4694449a03%3A0xc25eda5efc9a95a3!2sParque%20Espa%C3%B1a%2039%2C%20Colonia%20Condesa%2C%20Cuauht%C3%A9moc%2C%2006140%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1671497460461!5m2!1ses!2smx"
+                            width="600" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="m-2">
+                        <i class="fa-solid fa-location-dot text-danger"></i> Parque España 39, Colonia Condesa, Cuauht&eacute;moc, 06140 Ciudad de M&eacute;xico, CDMX
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 bg-light text-secondar">
+        <span class="text-purple">
+            Marco Integrativo
+        </span>
+        <br>
+        <span>
+            © 2022 Copyright: <span class="text-primary aviso" data-opc="6" ><u>Aviso de privacidad</u></span>
+        </span>
+    </div>
+</body>
+
+</html>
